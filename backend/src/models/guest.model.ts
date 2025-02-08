@@ -1,4 +1,5 @@
 import { model, Schema } from "mongoose";
+import jwt from "jsonwebtoken";
 
 const guestSchema = new Schema(
   {
@@ -10,6 +11,13 @@ const guestSchema = new Schema(
   },
   {
     timestamps: true,
+    methods: {
+      generateAccessToken(): string {
+        return jwt.sign({ _id: this._id, username: this.username }, process.env.JWT_SECRET!, {
+          expiresIn: "30m",
+        });
+      },
+    },
   },
 );
 
