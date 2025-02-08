@@ -2,6 +2,11 @@ import { model, Schema, Types } from "mongoose";
 
 const eventSchema = new Schema(
   {
+    organiser: {
+      type: Types.ObjectId,
+      require: [true, "organiser is required"],
+      ref: "User",
+    },
     name: {
       type: String,
       require: [true, "name is required"],
