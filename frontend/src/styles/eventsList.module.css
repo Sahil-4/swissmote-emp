@@ -1,0 +1,25 @@
+.eventsListContainer {
+  width: 360px;
+  margin: 12px auto;
+}
+
+.eventItem {
+  background: var(--accent);
+  margin: 4px;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.eventItemControls {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.eventItemControls > button,
+.eventItemControls > a {
+  height: 28px;
+  width: 96px;
+  margin: 4px;
+  display: block;
+}

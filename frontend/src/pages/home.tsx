@@ -1,5 +1,6 @@
 import Header from "../components/header.jsx";
 import Filter from "../components/filter.jsx";
+import EventsList from "../components/eventsList.jsx";
 
 const Home = () => {
   return (
@@ -7,9 +8,7 @@ const Home = () => {
       <Header />
       <section>
         <Filter />
-        <main>
-          {/* list of all events */}
-        </main>
+        <EventsList />
       </section>
     </>
   );
