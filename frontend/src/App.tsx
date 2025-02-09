@@ -6,7 +6,7 @@ import EventDetails from "./pages/eventDetails.jsx";
 import Login from "./pages/login.jsx";
 import Signup from "./pages/signup.jsx";
 import GuestLogin from "./pages/guestLogin.jsx";
-import "./App.css";
+import "./styles/globals.css";
 
 function App() {
   const router = createBrowserRouter([
