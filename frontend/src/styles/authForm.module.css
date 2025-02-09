@@ -1,0 +1,23 @@
+.authForm {
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.authForm > input,
+.authForm > button {
+  width: 90%;
+  height: 36px;
+  display: block;
+  margin: 4px auto;
+}
+
+.authForm > button {
+  color: var(--secondary);
+  background: var(--accent);
+}
+
+.authForm > button:hover {
+  background: var(--secondary);
+  color: var(--accent);
+}
