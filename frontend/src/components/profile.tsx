@@ -5,12 +5,10 @@ const Profile = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const open = () => {
-    console.log("opening");
     setIsOpen(true);
   };
 
   const close = () => {
-    console.log("closing");
     setIsOpen(false);
   };
 
