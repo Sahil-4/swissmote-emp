@@ -1,0 +1,28 @@
+.addEventForm {
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.addEventForm > input,
+.addEventForm > textarea,
+.addEventForm > button {
+  width: 90%;
+  height: 36px;
+  display: block;
+  margin: 4px auto;
+}
+
+.addEventForm > textarea {
+  height: calc(36px * 3);
+}
+
+.addEventForm > button {
+  background: var(--secondary);
+  color: var(--accent);
+}
+
+.addEventForm > button:hover {
+  color: var(--secondary);
+  background: var(--accent);
+}
