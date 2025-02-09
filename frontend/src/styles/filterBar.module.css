@@ -1,0 +1,28 @@
+.filterBar {
+  max-width: 100%;
+  width: 420px;
+  background: var(--accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 12px;
+}
+
+.filterBar > input,
+.filterBar > button {
+  height: 32px;
+}
+
+.filterBar > button {
+  width: 76px;
+  background: var(--secondary);
+  color: var(--accent);
+}
+
+.filterBar > button:hover {
+  color: var(--secondary);
+  background: var(--accent);
+}
