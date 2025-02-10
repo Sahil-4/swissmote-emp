@@ -1,0 +1,54 @@
+.eventDetailsContainer {
+  width: 720px;
+  margin: 12px auto;
+  padding: 8px;
+  background: var(--accent);
+}
+
+.eventDetailsContainer > * {
+  margin: 8px;
+}
+
+.eventDetailsContainer > div {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.eventDetailsContainer > div > button {
+  width: 84px;
+  height: 36px;
+  display: block;
+  margin: 4px;
+  background: var(--secondary);
+  color: var(--accent);
+  text-align: center;
+}
+
+.eventDetailsContainer > div > button:hover {
+  color: var(--secondary);
+  background: var(--accent);
+}
+
+.attandeesList {
+  width: 720px;
+  margin: 12px auto;
+  padding: 8px;
+  background: var(--accent);
+}
+
+.attandeesList > p {
+  margin-bottom: 16px;
+}
+
+.attandeesListItem {
+  width: 90%;
+  background: var(--primary);
+  font-size: 1rem;
+  border-radius: 12px;
+  margin: 4px auto;
+  padding: 8px;
+}
+
+.attandeesListItem:hover {
+  background: var(--accent);
+}
