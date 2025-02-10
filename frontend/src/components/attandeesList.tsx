@@ -19,7 +19,7 @@ const AttandeesList = () => {
       <p>Attandees ({attandees.length})</p>
 
       {attandees.map((user) => {
-        return <AttandeesListItem name={user.name} />;
+        return <AttandeesListItem key={user.name} name={user.name} />;
       })}
     </div>
   );

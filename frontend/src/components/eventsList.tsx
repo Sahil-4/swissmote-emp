@@ -103,7 +103,7 @@ const EventsList = () => {
 
       <div className={styles.eventsList}>
         {events.map((event) => (
-          <EventItem event={event} />
+          <EventItem key={event._id} event={event} />
         ))}
       </div>
     </main>

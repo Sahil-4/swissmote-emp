@@ -7,7 +7,7 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <span>Event Management App</span>
+      <Link to={"/"}>Event Management App</Link>
 
       <nav>
         {!authenticated ? (
