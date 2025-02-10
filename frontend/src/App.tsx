@@ -19,7 +19,7 @@ function App() {
       element: <AddEvent />,
     },
     {
-      path: "/updateEvent",
+      path: "/updateEvent/:id",
       element: <UpdateEvent />,
     },
     {
