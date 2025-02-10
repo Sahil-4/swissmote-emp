@@ -6,6 +6,7 @@ import EventDetails from "./pages/eventDetails.jsx";
 import Login from "./pages/login.jsx";
 import Signup from "./pages/signup.jsx";
 import GuestLogin from "./pages/guestLogin.jsx";
+import { AppProvider } from "./Context/AppContext.js";
 import "./styles/globals.css";
 
 function App() {
@@ -40,7 +41,11 @@ function App() {
     },
   ]);
 
-  return <RouterProvider router={router} />;
+  return (
+    <AppProvider>
+      <RouterProvider router={router} />
+    </AppProvider>
+  );
 }
 
 export default App;
