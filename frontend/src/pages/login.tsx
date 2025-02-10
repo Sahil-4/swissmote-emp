@@ -1,11 +1,14 @@
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import Header from "../components/header.jsx";
+import { useAppContext } from "../Context/useAppContext.js";
 import styles from "../styles/authForm.module.css";
 
 const Login = () => {
   const usernameInput = useRef<HTMLInputElement | null>(null);
   const passwordInput = useRef<HTMLInputElement | null>(null);
+
+  const { login } = useAppContext();
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
@@ -15,7 +18,7 @@ const Login = () => {
 
     if (!username || !password) return;
 
-    //
+    login(username, password);
   };
 
   return (

@@ -1,10 +1,13 @@
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import Header from "../components/header.jsx";
+import { useAppContext } from "../Context/useAppContext.js";
 import styles from "../styles/authForm.module.css";
 
 const GuestLogin = () => {
   const usernameInput = useRef<HTMLInputElement | null>(null);
+
+  const { guestLogin } = useAppContext();
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
@@ -13,7 +16,7 @@ const GuestLogin = () => {
 
     if (!username) return;
 
-    //
+    guestLogin(username);
   };
 
   return (

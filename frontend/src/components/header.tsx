@@ -1,16 +1,17 @@
 import { Link } from "react-router-dom";
 import Profile from "./profile.jsx";
 import styles from "../styles/header.module.css";
+import { useAppContext } from "../Context/useAppContext.js";
 
 const Header = () => {
-  const authenticated = true;
+  const { user } = useAppContext();
 
   return (
     <header className={styles.header}>
       <Link to={"/"}>Event Management App</Link>
 
       <nav>
-        {!authenticated ? (
+        {!user ? (
           <Link to={"/login"}>Login</Link>
         ) : (
           <>

@@ -1,11 +1,14 @@
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import Header from "../components/header.jsx";
+import { useAppContext } from "../Context/useAppContext.js";
 import styles from "../styles/authForm.module.css";
 
 const Signup = () => {
   const usernameInput = useRef<HTMLInputElement | null>(null);
   const passwordInput = useRef<HTMLInputElement | null>(null);
+
+  const { signup } = useAppContext();
 
   const handleSignUp = (e: React.FormEvent) => {
     e.preventDefault();
@@ -15,7 +18,7 @@ const Signup = () => {
 
     if (!username || !password) return;
 
-    //
+    signup(username, password);
   };
 
   return (
