@@ -24,7 +24,7 @@ const Login = () => {
       <section>
         <form onSubmit={handleLogin} className={styles.authForm}>
           <input type="text" placeholder="Username" ref={usernameInput} required={true} />
-          <input type="text" placeholder="Password" ref={passwordInput} required={true} />
+          <input type="password" placeholder="Password" ref={passwordInput} required={true} />
           <button type="submit">Login</button>
           <div>
             <Link to={"/signup"}>Sign up</Link>
