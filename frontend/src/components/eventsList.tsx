@@ -9,7 +9,7 @@ const EventItem = ({ event }: { event: EventI }) => {
 
   return (
     <div className={styles.eventItem}>
-      <h3>{event.title}</h3>
+      <h3>{event.name}</h3>
       <p>{event.time}</p>
       <p>{event.description}</p>
 
@@ -25,51 +25,75 @@ const EventsList = () => {
   const events: EventI[] = [
     {
       _id: "some_id_1",
-      title: "Some title 1",
+      name: "Some title 1",
       description: "Description of this event goes like this and this",
       time: "2025-02-09T18:31",
+      category: "cat",
+      organiser: "user1",
+      note: "",
     },
     {
       _id: "some_id_2",
-      title: "Some title 2",
+      name: "Some title 2",
       description: "Description of this event goes like this and this",
       time: "2025-02-09T18:31",
+      category: "cat",
+      organiser: "user1",
+      note: "",
     },
     {
       _id: "some_id_3",
-      title: "Some title 3",
+      name: "Some title 3",
       description: "Description of this event goes like this and this",
       time: "2025-02-09T18:31",
+      category: "cat",
+      organiser: "user1",
+      note: "",
     },
     {
       _id: "some_id_4",
-      title: "Some title 4",
+      name: "Some title 4",
       description: "Description of this event goes like this and this",
       time: "2025-02-09T18:31",
+      category: "cat",
+      organiser: "user1",
+      note: "",
     },
     {
       _id: "some_id_5",
-      title: "Some title 5",
+      name: "Some title 5",
       description: "Description of this event goes like this and this",
       time: "2025-02-09T18:31",
+      category: "cat",
+      organiser: "user1",
+      note: "",
     },
     {
       _id: "some_id_6",
-      title: "Some title 6",
+      name: "Some title 6",
       description: "Description of this event goes like this and this",
       time: "2025-02-09T18:31",
+      category: "cat",
+      organiser: "user1",
+      note: "",
     },
     {
       _id: "some_id_7",
-      title: "Some title 7",
+      name: "Some title 7",
       description: "Description of this event goes like this and this",
       time: "2025-02-09T18:31",
+      category: "cat",
+      organiser: "user1",
+      note: "",
     },
     {
       _id: "some_id_8",
-      title: "Some title 8",
+      name: "Some title 8",
       description: "Description of this event goes like this and this",
       time: "2025-02-09T18:31",
+      category: "cat",
+      organiser: "user1",
+      note: "",
     },
   ];
 
